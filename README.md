@@ -91,6 +91,7 @@ The Form styles just define the message box type, you have Information, Informat
 
 Hopefully you have found this .Net Component as useful as we have.  It’s quick and easy to use.  If you have any questions or comments, please feel free to let use know
 
+[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JSW8XEMQVH4BE)]
 
 ## Change Log
 
