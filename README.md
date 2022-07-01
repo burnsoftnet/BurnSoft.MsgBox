@@ -69,15 +69,33 @@ The button styles will just display the type of buttons that you want displayed 
 ![](images/info_yes_no_retry.jpg)
 
 #### Ok/Cancel
-
+![](images/info_ok_cancel.jpg)
 #### Retry/Cancel
-
+![](images/info_retry_cancel.jpg)
 #### Yes/No/Cancel
-
+![](images/info_yes_no_cancel.jpg)
 #### AutoClose
-
+![](images/info_autoclose.jpg)
 
 ### Form Styles
 The Form styles just define the message box type, you have Information, Information, Critical, Exclamation, and Question.
 
+#### Information
+![](images/info.jpg)
+#### Critical
+![](images/critical.jpg)
+#### Exclamation
+![](images/warning.jpg)
+#### Question
+![](images/question.jpg)
 
+Hopefully you have found this .Net Component as useful as we have.  It’s quick and easy to use.  If you have any questions or comments, please feel free to let use know
+
+
+## Change Log
+
+### v2.2.354.3455
+* Initial re-release of code after finding it in a archives from over 10 years ago.  Added Comments to code
+* Converted original PDF to this README.md file.
+* Added help file
+* Converted original install method from a windows installer in 2008 to a nugget package.
