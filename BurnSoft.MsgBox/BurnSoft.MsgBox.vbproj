@@ -114,6 +114,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bswtsicon.png" />
     <Content Include="Help_32_x_32.ico" />
     <Content Include="MyMsgBox.ico" />
     <None Include="Resources\info.jpg" />
@@ -122,4 +123,7 @@
     <None Include="Resources\Question.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>$(SolutionDir)postbuild.bat $(SolutionDir) $(ProjectDir) $(ConfigurationName) $(ProjectName)</PostBuildEvent>
+  </PropertyGroup>
 </Project>

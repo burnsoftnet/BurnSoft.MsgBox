@@ -2,16 +2,25 @@
 <package >
   <metadata>
     <id>$id$</id>
-    <version>$version$</version>
+    <version>2.2.354.3455-alpha</version>
     <title>$title$</title>
-    <authors>$author$</authors>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <authors>burnsoftnet</authors>
+    <owners>burnsoftnet</owners>
+    <projectUrl>https://github.com/burnsoftnet/BurnSoft.MsgBox.git</projectUrl>
+    <repository type="git" url="https://github.com/burnsoftnet/BurnSoft.Applications.MGC.git" />
+    <iconUrl>https://avatars0.githubusercontent.com/u/24593581?s=460</iconUrl>
+    <icon>bswtsicon.png</icon>
     <license type="expression">MIT</license>
-    <!-- <icon>icon.png</icon> -->
-    <projectUrl>http://project_url_here_or_delete_this_line/</projectUrl>
-    <description>$description$</description>
-    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>BurnSoft Custom MessageBox Control$</description>
+    <releaseNotes>Intial Re-release of old code that was thought lost.</releaseNotes>
     <copyright>$copyright$</copyright>
-    <tags>Tag1 Tag2</tags>
+    <tags>burnsoft MessageBox</tags>
   </metadata>
+  <files>
+    <file src="bswtsicon.png" target="" />
+    <file src="Help_32_x_32.ico" target="" />
+    <file src="MyMsgBox.ico" target="" />
+    <file src="bin/$configuration$/$id$.chm" target="content/$id$.chm" />
+  </files>
 </package>
