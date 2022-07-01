@@ -72,6 +72,7 @@
     <Compile Include="frmMsgBox.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="GlobalSuppressions.vb" />
     <Compile Include="modParams.vb" />
     <Compile Include="MsgClass.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />

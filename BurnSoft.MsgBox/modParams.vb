@@ -31,7 +31,6 @@ End Enum
 ''' <summary>
 ''' Class modParams for event log writing.
 ''' </summary>
-' ReSharper disable once InconsistentNaming
 Module modParams
     ''' <summary>
     ''' The message tag
