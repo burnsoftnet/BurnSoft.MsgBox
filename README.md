@@ -95,6 +95,9 @@ Hopefully you have found this .Net Component as useful as we have.  It’s quick
 
 ## Change Log
 
+### v2.2.354.3456
+* Fixed display issue in type header ( issues #7 )
+
 ### v2.2.354.3455
 * Initial re-release of code after finding it in a archives from over 10 years ago.  Added Comments to code
 * Converted original PDF to this README.md file.

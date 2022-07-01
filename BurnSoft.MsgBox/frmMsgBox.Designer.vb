@@ -22,60 +22,60 @@ Partial Class frmMsgBox
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMsgBox))
-        Me.chkReport = New System.Windows.Forms.CheckBox
-        Me.lblAutoClose = New System.Windows.Forms.Label
-        Me.picInfomation = New System.Windows.Forms.PictureBox
-        Me.lblMessageTitle = New System.Windows.Forms.Label
-        Me.btnMess_3 = New System.Windows.Forms.Button
-        Me.btnMess_2 = New System.Windows.Forms.Button
-        Me.btnMess_1 = New System.Windows.Forms.Button
-        Me.txtMessage = New System.Windows.Forms.TextBox
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox
+        Me.chkReport = New System.Windows.Forms.CheckBox()
+        Me.lblAutoClose = New System.Windows.Forms.Label()
+        Me.picInfomation = New System.Windows.Forms.PictureBox()
+        Me.lblMessageTitle = New System.Windows.Forms.Label()
+        Me.btnMess_3 = New System.Windows.Forms.Button()
+        Me.btnMess_2 = New System.Windows.Forms.Button()
+        Me.btnMess_1 = New System.Windows.Forms.Button()
+        Me.txtMessage = New System.Windows.Forms.TextBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.tmrAutoClose = New System.Windows.Forms.Timer(Me.components)
-        CType(Me.picInfomation, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SuspendLayout()
+        CType(Me.picInfomation,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox1,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.SuspendLayout
         '
         'chkReport
         '
-        Me.chkReport.AutoSize = True
-        Me.chkReport.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.chkReport.AutoSize = true
+        Me.chkReport.BackColor = System.Drawing.Color.White
         Me.chkReport.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.chkReport.Location = New System.Drawing.Point(270, 43)
         Me.chkReport.Name = "chkReport"
         Me.chkReport.Size = New System.Drawing.Size(115, 17)
         Me.chkReport.TabIndex = 29
         Me.chkReport.Text = "Save to Event Log"
-        Me.chkReport.UseVisualStyleBackColor = False
+        Me.chkReport.UseVisualStyleBackColor = false
         '
         'lblAutoClose
         '
-        Me.lblAutoClose.AutoSize = True
+        Me.lblAutoClose.AutoSize = true
         Me.lblAutoClose.Location = New System.Drawing.Point(13, 244)
         Me.lblAutoClose.Name = "lblAutoClose"
         Me.lblAutoClose.Size = New System.Drawing.Size(54, 13)
         Me.lblAutoClose.TabIndex = 28
         Me.lblAutoClose.Text = "Autoclose"
-        Me.lblAutoClose.Visible = False
+        Me.lblAutoClose.Visible = false
         '
         'picInfomation
         '
         Me.picInfomation.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.picInfomation.Image = CType(resources.GetObject("picInfomation.Image"), System.Drawing.Image)
+        Me.picInfomation.Image = CType(resources.GetObject("picInfomation.Image"),System.Drawing.Image)
         Me.picInfomation.Location = New System.Drawing.Point(12, 12)
         Me.picInfomation.Name = "picInfomation"
         Me.picInfomation.Size = New System.Drawing.Size(48, 48)
         Me.picInfomation.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.picInfomation.TabIndex = 27
-        Me.picInfomation.TabStop = False
+        Me.picInfomation.TabStop = false
         '
         'lblMessageTitle
         '
-        Me.lblMessageTitle.AutoSize = True
-        Me.lblMessageTitle.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.lblMessageTitle.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMessageTitle.AutoSize = true
+        Me.lblMessageTitle.BackColor = System.Drawing.Color.White
+        Me.lblMessageTitle.Font = New System.Drawing.Font("Verdana", 9!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.lblMessageTitle.Location = New System.Drawing.Point(90, 25)
         Me.lblMessageTitle.Name = "lblMessageTitle"
         Me.lblMessageTitle.Size = New System.Drawing.Size(57, 14)
@@ -89,7 +89,7 @@ Partial Class frmMsgBox
         Me.btnMess_3.Size = New System.Drawing.Size(78, 22)
         Me.btnMess_3.TabIndex = 25
         Me.btnMess_3.Text = "###"
-        Me.btnMess_3.UseVisualStyleBackColor = True
+        Me.btnMess_3.UseVisualStyleBackColor = true
         '
         'btnMess_2
         '
@@ -98,7 +98,7 @@ Partial Class frmMsgBox
         Me.btnMess_2.Size = New System.Drawing.Size(78, 22)
         Me.btnMess_2.TabIndex = 24
         Me.btnMess_2.Text = "###"
-        Me.btnMess_2.UseVisualStyleBackColor = True
+        Me.btnMess_2.UseVisualStyleBackColor = true
         '
         'btnMess_1
         '
@@ -107,26 +107,26 @@ Partial Class frmMsgBox
         Me.btnMess_1.Size = New System.Drawing.Size(78, 22)
         Me.btnMess_1.TabIndex = 23
         Me.btnMess_1.Text = "###"
-        Me.btnMess_1.UseVisualStyleBackColor = True
+        Me.btnMess_1.UseVisualStyleBackColor = true
         '
         'txtMessage
         '
         Me.txtMessage.BackColor = System.Drawing.SystemColors.MenuBar
         Me.txtMessage.Location = New System.Drawing.Point(12, 79)
-        Me.txtMessage.Multiline = True
+        Me.txtMessage.Multiline = true
         Me.txtMessage.Name = "txtMessage"
-        Me.txtMessage.ReadOnly = True
+        Me.txtMessage.ReadOnly = true
         Me.txtMessage.Size = New System.Drawing.Size(404, 150)
         Me.txtMessage.TabIndex = 22
         '
         'PictureBox1
         '
-        Me.PictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.PictureBox1.BackColor = System.Drawing.Color.White
         Me.PictureBox1.Location = New System.Drawing.Point(-2, 0)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(433, 73)
         Me.PictureBox1.TabIndex = 21
-        Me.PictureBox1.TabStop = False
+        Me.PictureBox1.TabStop = false
         '
         'tmrAutoClose
         '
@@ -134,7 +134,7 @@ Partial Class frmMsgBox
         '
         'frmMsgBox
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(432, 266)
         Me.Controls.Add(Me.chkReport)
@@ -147,18 +147,18 @@ Partial Class frmMsgBox
         Me.Controls.Add(Me.txtMessage)
         Me.Controls.Add(Me.PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
-        Me.MaximizeBox = False
-        Me.MinimizeBox = False
+        Me.MaximizeBox = false
+        Me.MinimizeBox = false
         Me.Name = "frmMsgBox"
-        Me.ShowIcon = False
+        Me.ShowIcon = false
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "frmMsgBox"
-        CType(Me.picInfomation, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
+        CType(Me.picInfomation,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox1,System.ComponentModel.ISupportInitialize).EndInit
+        Me.ResumeLayout(false)
+        Me.PerformLayout
 
-    End Sub
+End Sub
     Friend WithEvents chkReport As System.Windows.Forms.CheckBox
     Friend WithEvents lblAutoClose As System.Windows.Forms.Label
     Friend WithEvents picInfomation As System.Windows.Forms.PictureBox
