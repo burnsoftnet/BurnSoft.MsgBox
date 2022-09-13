@@ -88,12 +88,21 @@ The Form styles just define the message box type, you have Information, Informat
 ![](images/warning.jpg)
 #### Question
 ![](images/question.jpg)
+#### Pass/Failed
+![](images/PassFailed.jpg)
 
 Hopefully you have found this .Net Component as useful as we have.  It’s quick and easy to use.  If you have any questions or comments, please feel free to let use know
 
 [![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JSW8XEMQVH4BE)]
 
 ## Change Log
+
+### v2.2.355.3458
+* Added Pass/Failed Option, which will return 1 for Pass and 0 for Failed
+* REFACTOR - Got rid of the Inf for the MgBoxStyle and the mb in the MbBtnStyle
+
+### v2.2.354.3457
+* Fixed nuget package
 
 ### v2.2.354.3456
 * Fixed display issue in type header ( issues #7 )

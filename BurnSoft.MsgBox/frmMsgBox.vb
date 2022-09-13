@@ -38,9 +38,9 @@ Public Class frmMsgBox
     ''' Add a Tag number to each type of button so that it can reconised
     ''' </summary>
     ''' <param name="MsgStyle">The MSG style.</param>
-    Public Sub LoadMsgStyle(Optional ByVal MsgStyle As MgboxStyle = MgboxStyle.Inf_OK)
+    Public Sub LoadMsgStyle(Optional ByVal MsgStyle As MgboxStyle = MgboxStyle.Ok)
         Select Case MsgStyle
-            Case MgboxStyle.Inf_OK
+            Case MgboxStyle.Ok
                 btnMess_1.Text = "&OK"
                 Me.AcceptButton = btnMess_1
                 Me.CancelButton = btnMess_1
@@ -48,7 +48,7 @@ Public Class frmMsgBox
                 btnMess_2.Visible = False
                 btnMess_3.Visible = False
                 btnMess_1.Focus()
-            Case MgboxStyle.Inf_Retry
+            Case MgboxStyle.Retry
                 btnMess_1.Text = "&Ignore"
                 btnMess_1.Tag = "10010"
                 btnMess_2.Text = "&Retry"
@@ -57,7 +57,7 @@ Public Class frmMsgBox
                 btnMess_3.Tag = "10012"
                 Me.AcceptButton = btnMess_2
                 Me.CancelButton = btnMess_1
-            Case MgboxStyle.Inf_YesNo
+            Case MgboxStyle.YesNo
                 btnMess_1.Text = "&No"
                 btnMess_1.Tag = "10002"
                 btnMess_2.Text = "&Yes"
@@ -65,7 +65,7 @@ Public Class frmMsgBox
                 btnMess_3.Visible = False
                 Me.AcceptButton = btnMess_2
                 Me.CancelButton = btnMess_1
-            Case MgboxStyle.Inf_OKCancel
+            Case MgboxStyle.OkCancel
                 btnMess_1.Text = "&Cancel"
                 btnMess_1.Tag = "10004"
                 btnMess_2.Text = "&OK"
@@ -74,7 +74,7 @@ Public Class frmMsgBox
                 Me.AcceptButton = btnMess_2
                 Me.CancelButton = btnMess_1
                 btnMess_1.Focus()
-            Case MgboxStyle.Inf_RetryCancel
+            Case MgboxStyle.RetryCancel
                 btnMess_1.Text = "&Cancel"
                 btnMess_1.Tag = "10004"
                 btnMess_2.Text = "&Retry"
@@ -82,7 +82,7 @@ Public Class frmMsgBox
                 Me.AcceptButton = btnMess_2
                 Me.CancelButton = btnMess_1
                 btnMess_3.Visible = False
-            Case MgboxStyle.Inf_YesNoCancel
+            Case MgboxStyle.YesNoCancel
                 btnMess_1.Text = "&Cancel"
                 btnMess_1.Tag = "10004"
                 btnMess_2.Text = "&No"
@@ -91,6 +91,16 @@ Public Class frmMsgBox
                 btnMess_3.Tag = "10003"
                 Me.AcceptButton = btnMess_3
                 Me.CancelButton = btnMess_1
+            Case MgboxStyle.PassFailed
+                btnMess_1.Text = "&Failed"
+                btnMess_1.BackColor = Drawing.Color.Red
+                btnMess_1.Tag = "0"
+                btnMess_2.Text = "&Pass"
+                btnMess_2.BackColor = Drawing.Color.Green
+                btnMess_2.Tag = "1"
+                Me.AcceptButton = btnMess_2
+                Me.CancelButton = btnMess_1
+                btnMess_3.Visible = False
         End Select
     End Sub
     ''' <summary>
@@ -99,22 +109,22 @@ Public Class frmMsgBox
     ''' <param name="mbStyle">The mb style.</param>
     Public Sub LoadmbStyle(ByVal mbStyle As MgBtnStyle)
         Select Case mbStyle
-            Case MgBtnStyle.mb_Critical
+            Case MgBtnStyle.Critical
                 picInfomation.Image = My.Resources.critical
                 If Len(MsgMsg) = 0 Then MsgMsg = "Error Found"
                 lblMessageTitle.Text = MsgMsg
                 _msgStyle = 1
-            Case MgBtnStyle.mb_Exclamantion
+            Case MgBtnStyle.Exclamantion
                 picInfomation.Image = My.Resources.Exclamation_ico
                 If Len(MsgMsg) = 0 Then MsgMsg = ""
                 lblMessageTitle.Text = MsgMsg
                 _msgStyle = 2
-            Case MgBtnStyle.mb_Information
+            Case MgBtnStyle.Information
                 picInfomation.Image = My.Resources.info
                 If Len(MsgMsg) = 0 Then MsgMsg = "Information"
                 lblMessageTitle.Text = MsgMsg
                 _msgStyle = 3
-            Case MgBtnStyle.mb_Question
+            Case MgBtnStyle.Question
                 picInfomation.Image = My.Resources.Question
                 If Len(MsgMsg) = 0 Then MsgMsg = "?"
                 lblMessageTitle.Text = MsgMsg

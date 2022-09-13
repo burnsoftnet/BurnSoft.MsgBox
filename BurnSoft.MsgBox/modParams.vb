@@ -2,12 +2,13 @@
 ''' Message Box Style for the bottom buttons
 ''' </summary>
 Public Enum MgboxStyle
-    Inf_OK = 0
-    Inf_YesNo = 1
-    Inf_Retry = 2
-    Inf_OKCancel = 3
-    Inf_RetryCancel = 4
-    Inf_YesNoCancel = 5
+    Ok = 0
+    YesNo = 1
+    Retry = 2
+    OkCancel = 3
+    RetryCancel = 4
+    YesNoCancel = 5
+    PassFailed = 6
 End Enum
 ''' <summary>
 ''' Enum AutoCloseTimer Message box after x many seconds 0 - 40 seconds
@@ -23,15 +24,15 @@ End Enum
 ''' Enum Style of bot, information, warning, error etc
 ''' </summary>
 Public Enum MgBtnStyle
-    mb_Information = 0
-    mb_Critical = 1
-    mb_Exclamantion = 2
-    mb_Question = 3
+    Information = 0
+    Critical = 1
+    Exclamantion = 2
+    Question = 3
 End Enum
 ''' <summary>
 ''' Class modParams for event log writing.
 ''' </summary>
-Module modParams
+Module ModParams
     ''' <summary>
     ''' The message tag
     ''' </summary>
@@ -43,6 +44,6 @@ Module modParams
     ''' <param name="eDescription">The e description.</param>
     ''' <param name="eLogType">Type of the e log.</param>
     Public Sub WriteEventLog(ByVal eSource As String, ByVal eDescription As String, ByVal eLogType As EventLogEntryType)
-        Diagnostics.EventLog.WriteEntry(eSource, eDescription, eLogType)
+        EventLog.WriteEntry(eSource, eDescription, eLogType)
     End Sub
 End Module

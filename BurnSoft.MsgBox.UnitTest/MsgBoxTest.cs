@@ -14,19 +14,24 @@ namespace BurnSoft.MsgBox.UnitTest
         /// <summary>
         /// The object
         /// </summary>
-        MsgClass obj;
+        MsgClass _obj;
+        /// <summary>
+        /// Initializes this instance.
+        /// </summary>
         [TestInitialize]
         public void Init()
         {
-            obj = new MsgClass();
+            _obj = new MsgClass();
         }
-
-        [TestMethod]
+        /// <summary>
+        /// Defines the test method WarningOkTest.
+        /// </summary>
+        [TestMethod, TestCategory("Ok Button")]
         public void WarningOkTest()
         {
             try
             {
-                obj.DoMessage("It has been 7 days since your last backup.", MgboxStyle.Inf_OK, MgBtnStyle.mb_Exclamantion,
+                _obj.DoMessage("It has been 7 days since your last backup.", MgboxStyle.Ok, MgBtnStyle.Exclamantion,
                     "Last Backup Notice", AutoCloseTimer.ac_0Sec, true, "Warning");
             }
             catch (Exception e)
@@ -35,13 +40,15 @@ namespace BurnSoft.MsgBox.UnitTest
                 throw;
             }
         }
-
-        [TestMethod]
+        /// <summary>
+        /// Defines the test method CriticalOkTest.
+        /// </summary>
+        [TestMethod, TestCategory("Ok Button")]
         public void CriticalOkTest()
         {
             try
             {
-                obj.DoMessage("It has been 7 days since your last backup.", MgboxStyle.Inf_OK, MgBtnStyle.mb_Critical,
+                _obj.DoMessage("It has been 7 days since your last backup.", MgboxStyle.Ok, MgBtnStyle.Critical,
                     "Last Backup Notice", AutoCloseTimer.ac_0Sec, true, "Warning");
             }
             catch (Exception e)
@@ -50,13 +57,15 @@ namespace BurnSoft.MsgBox.UnitTest
                 throw;
             }
         }
-
-        [TestMethod]
+        /// <summary>
+        /// Defines the test method QuestionOkTest.
+        /// </summary>
+        [TestMethod, TestCategory("Ok Button")]
         public void QuestionOkTest()
         {
             try
             {
-                obj.DoMessage("It has been 7 days since your last backup.", MgboxStyle.Inf_OK, MgBtnStyle.mb_Question,
+                _obj.DoMessage("It has been 7 days since your last backup.", MgboxStyle.Ok, MgBtnStyle.Question,
                     "Last Backup Notice", AutoCloseTimer.ac_0Sec, true, "Warning");
             }
             catch (Exception e)
@@ -65,13 +74,15 @@ namespace BurnSoft.MsgBox.UnitTest
                 throw;
             }
         }
-
-        [TestMethod]
+        /// <summary>
+        /// Defines the test method OkTest.
+        /// </summary>
+        [TestMethod, TestCategory("Ok Button")]
         public void OkTest()
         {
             try
             {
-                obj.DoMessage("It has been 7 days since your last backup.", MgboxStyle.Inf_OK, MgBtnStyle.mb_Information,
+                _obj.DoMessage("It has been 7 days since your last backup.", MgboxStyle.Ok, MgBtnStyle.Information,
                     "Last Backup Notice", AutoCloseTimer.ac_0Sec, true, "Info");
             }
             catch (Exception e)
@@ -80,13 +91,15 @@ namespace BurnSoft.MsgBox.UnitTest
                 throw;
             }
         }
-
-        [TestMethod]
+        /// <summary>
+        /// Defines the test method OkAudo10SecondsTest.
+        /// </summary>
+        [TestMethod, TestCategory("Ok Button")]
         public void OkAudo10SecondsTest()
         {
             try
             {
-                obj.DoMessage("It has been 7 days since your last backup.", MgboxStyle.Inf_OK, MgBtnStyle.mb_Information,
+                _obj.DoMessage("It has been 7 days since your last backup.", MgboxStyle.Ok, MgBtnStyle.Information,
                     "Last Backup Notice", AutoCloseTimer.ac_10Secs, true, "Info");
             }
             catch (Exception e)
@@ -95,13 +108,15 @@ namespace BurnSoft.MsgBox.UnitTest
                 throw;
             }
         }
-
-        [TestMethod]
+        /// <summary>
+        /// Defines the test method OkCancelTest.
+        /// </summary>
+        [TestMethod, TestCategory("Ok/Cancel Button")]
         public void OkCancelTest()
         {
             try
             {
-                obj.DoMessage("It has been 7 days since your last backup.", MgboxStyle.Inf_OKCancel, MgBtnStyle.mb_Information,
+                _obj.DoMessage("It has been 7 days since your last backup.", MgboxStyle.OkCancel, MgBtnStyle.Information,
                     "Last Backup Notice", AutoCloseTimer.ac_0Sec, true, "Info");
             }
             catch (Exception e)
@@ -110,13 +125,15 @@ namespace BurnSoft.MsgBox.UnitTest
                 throw;
             }
         }
-
-        [TestMethod]
+        /// <summary>
+        /// Defines the test method RetryTest.
+        /// </summary>
+        [TestMethod, TestCategory("Retry Button")]
         public void RetryTest()
         {
             try
             {
-                obj.DoMessage("It has been 7 days since your last backup.", MgboxStyle.Inf_Retry, MgBtnStyle.mb_Information,
+                _obj.DoMessage("It has been 7 days since your last backup.", MgboxStyle.Retry, MgBtnStyle.Information,
                     "Last Backup Notice", AutoCloseTimer.ac_0Sec, true, "Info");
             }
             catch (Exception e)
@@ -125,13 +142,15 @@ namespace BurnSoft.MsgBox.UnitTest
                 throw;
             }
         }
-
-        [TestMethod]
+        /// <summary>
+        /// Defines the test method RetryCancelTest.
+        /// </summary>
+        [TestMethod, TestCategory("Retry/Cancel Button")]
         public void RetryCancelTest()
         {
             try
             {
-                obj.DoMessage("It has been 7 days since your last backup.", MgboxStyle.Inf_RetryCancel, MgBtnStyle.mb_Information,
+                _obj.DoMessage("It has been 7 days since your last backup.", MgboxStyle.RetryCancel, MgBtnStyle.Information,
                     "Last Backup Notice", AutoCloseTimer.ac_0Sec, true, "Info");
             }
             catch (Exception e)
@@ -140,13 +159,15 @@ namespace BurnSoft.MsgBox.UnitTest
                 throw;
             }
         }
-
-        [TestMethod]
+        /// <summary>
+        /// Defines the test method YesNoTest.
+        /// </summary>
+        [TestMethod, TestCategory("Yes/No Button")]
         public void YesNoTest()
         {
             try
             {
-                obj.DoMessage("It has been 7 days since your last backup.", MgboxStyle.Inf_YesNo, MgBtnStyle.mb_Information,
+                _obj.DoMessage("It has been 7 days since your last backup.", MgboxStyle.YesNo, MgBtnStyle.Information,
                     "Last Backup Notice", AutoCloseTimer.ac_0Sec, true, "Info");
             }
             catch (Exception e)
@@ -155,13 +176,15 @@ namespace BurnSoft.MsgBox.UnitTest
                 throw;
             }
         }
-
-        [TestMethod]
+        /// <summary>
+        /// Defines the test method YesNoCancelTest.
+        /// </summary>
+        [TestMethod, TestCategory("Yes/No/Cancel Button")]
         public void YesNoCancelTest()
         {
             try
             {
-                obj.DoMessage("It has been 7 days since your last backup.", MgboxStyle.Inf_YesNoCancel, MgBtnStyle.mb_Information,
+                _obj.DoMessage("It has been 7 days since your last backup.", MgboxStyle.YesNoCancel, MgBtnStyle.Information,
                     "Last Backup Notice", AutoCloseTimer.ac_0Sec, true, "Info");
             }
             catch (Exception e)
@@ -169,6 +192,28 @@ namespace BurnSoft.MsgBox.UnitTest
                 Console.WriteLine(e);
                 throw;
             }
+        }
+        /// <summary>
+        /// Defines the test method PassFailedPassedTest.
+        /// </summary>
+        [TestMethod, TestCategory("Pass/Failed Button")]
+        public void PassFailedPassedTest()
+        {
+            var test = _obj.DoMessage("It has been 7 days since your last backup.", MgboxStyle.PassFailed, MgBtnStyle.Information,
+                "Last Backup Notice", AutoCloseTimer.ac_0Sec, true, "Info");
+            TestContext.WriteLine($"RETURN VALUEL {test}");
+            Assert.IsTrue(test.Equals(1));
+        }
+        /// <summary>
+        /// Defines the test method PassFailedFailedTest.
+        /// </summary>
+        [TestMethod, TestCategory("Pass/Failed Button")]
+        public void PassFailedFailedTest()
+        {
+            var test = _obj.DoMessage("It has been 7 days since your last backup. EXPECT FAILED TEST!", MgboxStyle.PassFailed, MgBtnStyle.Information,
+                "Last Backup Notice", AutoCloseTimer.ac_0Sec, true, "Info");
+            TestContext.WriteLine($"RETURN VALUEL {test}");
+            Assert.IsTrue(test.Equals(0));
         }
     }
 }
