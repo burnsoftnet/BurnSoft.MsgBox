@@ -89,7 +89,7 @@ The Form styles just define the message box type, you have Information, Informat
 #### Question
 ![](images/question.jpg)
 #### Pass/Failed
-![](images/PassFailed.jpg)
+![](images/PassFailed.JPG)
 
 Hopefully you have found this .Net Component as useful as we have.  It’s quick and easy to use.  If you have any questions or comments, please feel free to let use know
 
