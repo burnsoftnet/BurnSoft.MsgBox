@@ -1,5 +1,9 @@
 # BurnSoft.MsgBox
 
+![](https://img.shields.io/nuget/vpre/BurnSoft.MsgBox) | ![](https://img.shields.io/nuget/v/BurnSoft.MsgBox)
+
+![](https://img.shields.io/badge/license-MIT-blue.svg?maxAge=3600) 
+
 The BurnSoft Message Box Control was created to allow long messages to be displayed without filling up the screen.  There have been some messages that would make the standard message box scroll off the screen.  With this customized control the long messages will be displayed in a multi-text text box.
 
 To almost match the same functionality as the message box that comes with VB and VB.Net, it will allow you to set the form style and button style.  To Help save some of the information, it will also give you the option of saving the message to the event log.
