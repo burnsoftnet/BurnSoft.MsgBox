@@ -12,7 +12,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("BurnSoft Custom MessageBox Control")>
 <Assembly: AssemblyCompany("www.burnsoft.net")>
 <Assembly: AssemblyProduct("BurnSoft.MsgBox")>
-<Assembly: AssemblyCopyright("Copyright © www.burnsoft.net 2008-2022")>
+<Assembly: AssemblyCopyright("Copyright © www.burnsoft.net 2008-2025")>
 <Assembly: AssemblyTrademark("www.burnsoft.net")>
 
 <Assembly: ComVisible(False)>
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")>
 
-<Assembly: AssemblyVersion("2.2.355.3458")>
-<Assembly: AssemblyFileVersion("2.2.355.3458")>
+<Assembly: AssemblyVersion("2.3.356.3460")>
+<Assembly: AssemblyFileVersion("2.3.356.3460")>
