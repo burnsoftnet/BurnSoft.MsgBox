@@ -101,6 +101,10 @@ Hopefully you have found this .Net Component as useful as we have.  It’s quick
 
 ## Change Log
 
+### v2.3.356.3460
+
+* Updated target fraemwork from 4.7.2 to 4.8.1
+
 ### v2.2.355.3458
 * Added Pass/Failed Option, which will return 1 for Pass and 0 for Failed
 * REFACTOR - Got rid of the Inf for the MgBoxStyle and the mb in the MbBtnStyle
