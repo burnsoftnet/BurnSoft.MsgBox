@@ -101,9 +101,10 @@ Hopefully you have found this .Net Component as useful as we have.  It’s quick
 
 ## Change Log
 
-### v2.3.356.3461
+### v2.3.356.3462
 
 * Updated target fraemwork from 4.7.2 to 4.8.1
+* Set Build to x86 instead of any CPU
 
 ### v2.2.355.3458
 * Added Pass/Failed Option, which will return 1 for Pass and 0 for Failed
