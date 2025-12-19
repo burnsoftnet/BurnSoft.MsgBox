@@ -104,7 +104,8 @@ Hopefully you have found this .Net Component as useful as we have.  It’s quick
 ### v2.3.356.3462
 
 * Updated target fraemwork from 4.7.2 to 4.8.1
-* Set Build to x86 instead of any CPU
+* WORK AROUND FOR ERROR - MDIParent1.Load::438::Method not found: 'Int64 BurnSoft.MsgBox.MsgClass.DoMessage(System.String, BurnSoft.MsgBox.MgboxStyle, BurnSoft.MsgBox.MgBtnStyle, System.String, BurnSoft.MsgBox.AutoCloseTimer, Boolean, System.String, Boolean)'. by setting build to x86
+* Right now for nuget, version 2.3.356.3462 is for any CPU and v2.32.356.3462 will be for x86
 
 ### v2.2.355.3458
 * Added Pass/Failed Option, which will return 1 for Pass and 0 for Failed
